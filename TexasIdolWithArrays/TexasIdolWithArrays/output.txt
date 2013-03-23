@@ -1,0 +1,22 @@
+Programmer: Taylor Kirk
+
+  Name       Avg. Score
+------------------------------------------------------------
+Smithson       8.000
+Marshall       4.667
+ Johnson       5.200
+   Jones       8.600
+   Keyes       2.833
+ Simmons       8.067
+Williams       8.867
+    Hunt       5.867
+   Rules       7.000
+   Anand       7.000
+ Hartley       8.700
+  Hoover       6.833
+   Casey       7.000
+  Hudson       6.600
+   Conti       7.533
+Peterson       5.733
+
+

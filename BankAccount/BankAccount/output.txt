@@ -1,0 +1,116 @@
+Taylor Kirk
+
+Smith
+      Interest Rate                    3.00%
+      Initial Balance       $        1250.00
+      Deposit               $          25.00
+      New Balance           $        1275.00
+      Withdrawal            $          50.00
+      New Balance           $        1225.00
+      Interest              $           3.06
+      New Balance           $        1228.06
+      Deposit               $         200.00
+      New Balance           $        1428.06
+      Deposit               $         300.34
+      New Balance           $        1728.40
+      Withdrawal            $        1000.00
+      New Balance           $         728.40
+      Interest              $           1.82
+      New Balance           $         730.22
+
+Jones
+      Interest Rate                    2.50%
+      Initial Balance       $          50.00
+      Withdrawal            $           0.00
+      New Balance           $          50.00
+      Deposit               $         100.00
+      New Balance           $         150.00
+      Withdrawal            $           5.00
+      New Balance           $         145.00
+      Deposit               $          43.34
+      New Balance           $         188.34
+      Interest              $           0.39
+      New Balance           $         188.73
+      Deposit               $          20.20
+      New Balance           $         208.93
+
+McDonald
+      Interest Rate                    1.50%
+      Initial Balance       $         250.98
+      Interest              $           0.31
+      New Balance           $         251.29
+      Deposit               $          24.90
+      New Balance           $         276.19
+      Deposit               $         209.33
+      New Balance           $         485.52
+      Deposit               $         200.00
+      New Balance           $         685.52
+      Interest              $           0.86
+      New Balance           $         686.38
+      Deposit               $         890.45
+      New Balance           $        1576.83
+      Interest              $           1.97
+      New Balance           $        1578.80
+      Withdrawal            $           1.00
+      New Balance           $        1577.80
+
+Henderson
+      Interest Rate                    2.00%
+      Initial Balance       $         100.00
+      Deposit               $         100.00
+      New Balance           $         200.00
+      Withdrawal            $           0.00
+      New Balance           $         200.00
+      Deposit               $           1.25
+      New Balance           $         201.25
+      Withdrawal            $         200.50
+      New Balance           $           0.75
+      Interest              $           0.00
+      New Balance           $           0.75
+      Deposit               $           5.00
+      New Balance           $           5.75
+
+Julliard
+      Interest Rate                    4.00%
+      Initial Balance       $       10000.00
+      Withdrawal            $         250.00
+      New Balance           $        9750.00
+      Deposit               $         500.00
+      New Balance           $       10250.00
+      Withdrawal            $        1000.00
+      New Balance           $        9250.00
+      Interest              $          30.83
+      New Balance           $        9280.83
+      Withdrawal            $         249.90
+      New Balance           $        9030.93
+      Deposit               $          25.88
+      New Balance           $        9056.81
+      Interest              $          30.19
+      New Balance           $        9087.00
+      Deposit               $         100.00
+      New Balance           $        9187.00
+
+Randall
+      Interest Rate                    3.00%
+      Initial Balance       $        5000.00
+      Deposit               $          34.98
+      New Balance           $        5034.98
+      Deposit               $          30.09
+      New Balance           $        5065.07
+      Deposit               $         345.92
+      New Balance           $        5410.99
+
+Matthews
+      Interest Rate                    2.75%
+      Initial Balance       $         674.92
+      Withdrawal            $          45.00
+      New Balance           $         629.92
+      Withdrawal            $          63.50
+      New Balance           $         566.42
+      Interest              $           1.30
+      New Balance           $         567.72
+      Withdrawal            $          89.00
+      New Balance           $         478.72
+      Withdrawal            $           0.00
+      New Balance           $         478.72
+

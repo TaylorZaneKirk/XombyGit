@@ -1,0 +1,110 @@
+Taylor Kirk 
+
+Name:  Smith
+US Dollars: 50.0000
+Exchanges:  38.7400 Euro
+           315.2950 Chinese Yuan
+           101.6700 Brazilian Real
+           643.0100 Mexican Peso
+          2668.5150 Indian Rupee
+            30.8800 British Pound
+
+Name:  Jones
+US Dollars: 100.0000
+Exchanges:  77.4800 Euro
+           630.5900 Chinese Yuan
+           203.3400 Brazilian Real
+          1286.0200 Mexican Peso
+          5337.0300 Indian Rupee
+            61.7600 British Pound
+
+Name: Hudson
+US Dollars: 72.0000
+Exchanges:  55.7856 Euro
+           454.0248 Chinese Yuan
+           146.4048 Brazilian Real
+           925.9344 Mexican Peso
+          3842.6616 Indian Rupee
+            44.4672 British Pound
+
+Name:  Adams
+US Dollars: 894.0000
+Exchanges: 692.6712 Euro
+          5637.4746 Chinese Yuan
+          1817.8596 Brazilian Real
+         11497.0188 Mexican Peso
+         47713.0482 Indian Rupee
+           552.1344 British Pound
+
+Name:Brazile
+US Dollars: 569.0000
+Exchanges: 440.8612 Euro
+          3588.0571 Chinese Yuan
+          1157.0046 Brazilian Real
+          7317.4538 Mexican Peso
+         30367.7007 Indian Rupee
+           351.4144 British Pound
+
+Name:Williams
+US Dollars: 750.0000
+Exchanges: 581.1000 Euro
+          4729.4250 Chinese Yuan
+          1525.0500 Brazilian Real
+          9645.1500 Mexican Peso
+         40027.7250 Indian Rupee
+           463.2000 British Pound
+
+Name:   Hunt
+US Dollars: 2000.0000
+Exchanges: 1549.6000 Euro
+         12611.8000 Chinese Yuan
+          4066.8000 Brazilian Real
+         25720.4000 Mexican Peso
+        106740.6000 Indian Rupee
+          1235.2000 British Pound
+
+Name: Martin
+US Dollars: 65.0000
+Exchanges:  50.3620 Euro
+           409.8835 Chinese Yuan
+           132.1710 Brazilian Real
+           835.9130 Mexican Peso
+          3469.0695 Indian Rupee
+            40.1440 British Pound
+
+Name: Gilmer
+US Dollars: 900.0000
+Exchanges: 697.3200 Euro
+          5675.3100 Chinese Yuan
+          1830.0600 Brazilian Real
+         11574.1800 Mexican Peso
+         48033.2700 Indian Rupee
+           555.8400 British Pound
+
+Name: Lesley
+US Dollars: 250.0000
+Exchanges: 193.7000 Euro
+          1576.4750 Chinese Yuan
+           508.3500 Brazilian Real
+          3215.0500 Mexican Peso
+         13342.5750 Indian Rupee
+           154.4000 British Pound
+
+Name:Patrick
+US Dollars: 8090.0000
+Exchanges: 6268.1320 Euro
+         51014.7310 Chinese Yuan
+         16450.2060 Brazilian Real
+        104039.0180 Mexican Peso
+        431765.7270 Indian Rupee
+          4996.3840 British Pound
+
+Name:Matthews
+US Dollars: 25.0000
+Exchanges:  19.3700 Euro
+           157.6475 Chinese Yuan
+            50.8350 Brazilian Real
+           321.5050 Mexican Peso
+          1334.2575 Indian Rupee
+            15.4400 British Pound
+

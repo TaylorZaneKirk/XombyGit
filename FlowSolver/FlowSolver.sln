@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FlowSolver", "FlowSolver\FlowSolver.vcxproj", "{6C0AC4CB-C0A9-47B0-9583-0E74E26C73BD}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FlowPuzzle", "FlowPuzzle\FlowPuzzle.vcxproj", "{B3914C15-1A1E-4766-8613-19390BBD17F4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6C0AC4CB-C0A9-47B0-9583-0E74E26C73BD}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6C0AC4CB-C0A9-47B0-9583-0E74E26C73BD}.Debug|Win32.Build.0 = Debug|Win32
+		{6C0AC4CB-C0A9-47B0-9583-0E74E26C73BD}.Release|Win32.ActiveCfg = Release|Win32
+		{6C0AC4CB-C0A9-47B0-9583-0E74E26C73BD}.Release|Win32.Build.0 = Release|Win32
+		{B3914C15-1A1E-4766-8613-19390BBD17F4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B3914C15-1A1E-4766-8613-19390BBD17F4}.Debug|Win32.Build.0 = Debug|Win32
+		{B3914C15-1A1E-4766-8613-19390BBD17F4}.Release|Win32.ActiveCfg = Release|Win32
+		{B3914C15-1A1E-4766-8613-19390BBD17F4}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

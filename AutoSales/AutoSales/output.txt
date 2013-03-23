@@ -1,0 +1,112 @@
+Taylor Kirk 
+
+Computer Geeks Auto Repair Shop 
+4008 On The Highway 
+Wichita Falls, Texas 
+Service Invoice 
+
+Parts:          $104.00
+Labor:          $200.00
+Sales Tax:      $25.08
+----------------------- 
+TOTAL:          $329.08
+
+Computer Geeks Auto Repair Shop 
+4008 On The Highway 
+Wichita Falls, Texas 
+Service Invoice 
+
+Parts:          $67.23
+Labor:          $35.00
+Sales Tax:      $8.43
+----------------------- 
+TOTAL:          $110.66
+
+Computer Geeks Auto Repair Shop 
+4008 On The Highway 
+Wichita Falls, Texas 
+Service Invoice 
+
+Parts:          $390.75
+Labor:          $500.00
+Sales Tax:      $73.49
+----------------------- 
+TOTAL:          $964.24
+
+Computer Geeks Auto Repair Shop 
+4008 On The Highway 
+Wichita Falls, Texas 
+Service Invoice 
+
+Parts:          $100.00
+Labor:          $100.00
+Sales Tax:      $16.50
+----------------------- 
+TOTAL:          $216.50
+
+Computer Geeks Auto Repair Shop 
+4008 On The Highway 
+Wichita Falls, Texas 
+Service Invoice 
+
+Parts:          $143.00
+Labor:          $89.99
+Sales Tax:      $19.22
+----------------------- 
+TOTAL:          $252.21
+
+Computer Geeks Auto Repair Shop 
+4008 On The Highway 
+Wichita Falls, Texas 
+Service Invoice 
+
+Parts:          $78.45
+Labor:          $89.01
+Sales Tax:      $13.82
+----------------------- 
+TOTAL:          $181.28
+
+Computer Geeks Auto Repair Shop 
+4008 On The Highway 
+Wichita Falls, Texas 
+Service Invoice 
+
+Parts:          $400.34
+Labor:          $354.90
+Sales Tax:      $62.31
+----------------------- 
+TOTAL:          $817.55
+
+Computer Geeks Auto Repair Shop 
+4008 On The Highway 
+Wichita Falls, Texas 
+Service Invoice 
+
+Parts:          $4089.45
+Labor:          $7907.00
+Sales Tax:      $989.71
+----------------------- 
+TOTAL:          $12986.16
+
+Computer Geeks Auto Repair Shop 
+4008 On The Highway 
+Wichita Falls, Texas 
+Service Invoice 
+
+Parts:          $17.50
+Labor:          $50.00
+Sales Tax:      $5.57
+----------------------- 
+TOTAL:          $73.07
+
+Computer Geeks Auto Repair Shop 
+4008 On The Highway 
+Wichita Falls, Texas 
+Service Invoice 
+
+Parts:          $50.00
+Labor:          $89.90
+Sales Tax:      $11.54
+----------------------- 
+TOTAL:          $151.44
+

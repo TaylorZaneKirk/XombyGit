@@ -1,0 +1,92 @@
+Student Name: Taylor Kirk
+
+Driver #1
+Driver's age?            35
+Number of tickets?        0
+Value of car?   $   4500.00
+Premium?        $    224.44
+
+Driver #2
+Driver's age?            28
+Number of tickets?        1
+Value of car?   $  10000.00
+Premium?        $   1521.19
+
+Driver #3
+Driver's age?            72
+Number of tickets?        2
+Value of car?   $  27509.00
+Premium?        $   1727.29
+
+Driver #4
+Driver's age?            16
+Number of tickets?        2
+Value of car?   $  13500.00
+Premium?        $   3091.96
+
+Driver #5
+Driver's age?            45
+Number of tickets?        6
+Value of car?   $  32000.00
+Premium?            Refused
+
+Driver #6
+Driver's age?            50
+Number of tickets?        1
+Value of car?   $  25000.00
+Premium?        $   1309.22
+
+Driver #7
+Driver's age?            25
+Number of tickets?        0
+Value of car?   $  17604.00
+Premium?        $   2550.38
+
+Driver #8
+Driver's age?            29
+Number of tickets?        1
+Value of car?   $  21000.00
+Premium?        $   3362.63
+
+Driver #9
+Driver's age?            24
+Number of tickets?        3
+Value of car?   $  12000.00
+Premium?        $   2706.57
+
+Driver #10
+Driver's age?            39
+Number of tickets?        4
+Value of car?   $  23970.00
+Premium?            Refused
+
+Driver #11
+Driver's age?            17
+Number of tickets?        7
+Value of car?   $   1208.00
+Premium?            Refused
+
+Driver #12
+Driver's age?            65
+Number of tickets?        1
+Value of car?   $  10450.00
+Premium?        $    547.25
+
+Driver #13
+Driver's age?            21
+Number of tickets?        1
+Value of car?   $  17004.00
+Premium?        $   2586.63
+
+Driver #14
+Driver's age?            29
+Number of tickets?        2
+Value of car?   $  34000.00
+Premium?        $   6201.26
+
+Driver #15
+Driver's age?            30
+Number of tickets?        4
+Value of car?   $  21345.00
+Premium?            Refused
+

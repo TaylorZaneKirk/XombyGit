@@ -1,0 +1,5 @@
+x y b g x
+x x x r x
+x x r x x
+y x x o x
+b x o g x

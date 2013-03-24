@@ -275,19 +275,7 @@ CoordList* Puzzle::GeneratePath(CoordList* Path, int GoalX, int GoalY)
 		{
 			NewX = PointNeighbors->NeighborX;
 			NewY = PointNeighbors->NeighborY;
-
-			while(ClosedSpaces[NewX][NewY] != 0)
-			{
-				PointNeighbors = PointNeighbors->next;
-				NewX = PointNeighbors->NeighborX;
-				NewY = PointNeighbors->NeighborY;
-			}
-
-			if(PointNeighbors == NULL)
-			{
-				cout << "No Path Found." << endl;
-				system("pause");
-			}
+			
 
 			if(BestChoice == NULL)
 			{

@@ -4,13 +4,19 @@
 #include <Windows.h>
 using namespace std;
 
-const int NumDirections = 4;
-int DirectsX[NumDirections] = {-1, 0, 0, 1};
-int DirectsY[NumDirections] = {0, -1, 1, 0};
+const int NumDirections = 4;	//The number of possible direction each node
+								//	"looks" at as possible movement locations.
+
+int DirectsX[NumDirections] = {-1, 0, 0, 1};	//Possible 'X' movements
+int DirectsY[NumDirections] = {0, -1, 1, 0};	//Possible 'Y' movements
 
 
 Puzzle::Puzzle(void)
 {
+	//Class contructor; initiliazes the dynamic pointer
+	//	'head' to equal NULL. The variable pointer head is
+	//	used to point at the head of the list. Storing the
+	//	contents of the list within the variable itself.
 	head = NULL;
 }
 
@@ -29,17 +35,27 @@ void Puzzle::Form(int PuzzleSize, int PuzzleColors)
 //			to include within the puzzle"
 //@Returns:	Void
 
-	Size = PuzzleSize;
-	NumColors = PuzzleColors;
+	Size = PuzzleSize;	//Sets the class variable 'Size' to equal the
+						//	PuzzleSize variable passed into the function
+						
+	NumColors = PuzzleColors;	//This variable is set to the 'PuzzleColors'
+								//	variable passed in from the calling function
+								//	this stores the number of colors to appear
+								//	within the puzzle.
+
 	Flow = new int *[Size];	//Initializes the 2D Array to be
 							//	used for the 0's and color codes
-	ClosedSpaces = new int *[Size];
 
+	ClosedSpaces = new int *[Size];	//Essentially a duplicate of the Flow array,
+									//	except that it is used to designates spaces
+									//	that cannot be used for the duration of the program.
+
+	//Function that loads the Flow and ClosedSpaces
+	//	arrays with zeros.
 	FillCells();
 	
 	//Loads the colors into the array
 	LoadColors();
-
 	//Draw the visual puzzle grid
 	Draw();
 }
@@ -47,7 +63,7 @@ void Puzzle::Form(int PuzzleSize, int PuzzleColors)
 void Puzzle::FillCells(void)
 {
 	//For loop to place 0 within 
-	//all allocated cells of the array
+	//all allocated cells of the arrays
 	for(int r = 0; r < Size; r++)
 	{
 		Flow[r] = new int [Size];
@@ -87,8 +103,7 @@ void Puzzle::LoadColors(void)
 			Path->NeighborX = ThisX;
 			Path->NeighborY = ThisY;
 			head->Path = GeneratePath(Path, head->GoalX, head->GoalY);
-			//DisplayNumGrid();
-			system("pause");
+			FillPath(*&head);
 		}
 		else
 		{
@@ -106,9 +121,24 @@ void Puzzle::LoadColors(void)
 			Path->NeighborY = ThisY;
 			Path->next = NULL;
 			head->Path = GeneratePath(Path, head->GoalX, head->GoalY);
+			FillPath(*&head);
 			//DisplayNumGrid();
 
-			system("pause");
+			
+		}
+	}
+}
+
+void Puzzle::Clear99s(void)
+{
+	for(int i = 0; i < Size; i++)
+	{
+		for(int j = 0; j < Size; j++)
+		{
+			if(Flow[i][j] == 99)
+			{
+				Flow[i][j] = 0;
+			}
 		}
 	}
 }
@@ -174,7 +204,6 @@ CoordList* Puzzle::MovingIn(int ThisX, int ThisY)
 			}
 		}
 	}
-	DisplayNumGrid();
 	return NeighborHead;
 }
 
@@ -205,6 +234,34 @@ void Puzzle::SetGoal(ColorPoint* ThisColor)
 	
 }
 
+void Puzzle::FillPath(ColorPoint* &ThisColor)
+{
+	CoordList *Path = new CoordList(*ThisColor->Path);
+	int ColorCode = ThisColor->ColorCode;
+	while(Path != NULL)
+	{
+		int xPos = Path->NeighborX;
+		int yPos = Path->NeighborY;
+		Flow[xPos][yPos] = ColorCode;
+		Path = Path->next;
+	}
+}
+
+void Puzzle::CheckEmpty(void)
+{
+	for(int i = 0; i < Size; i++)
+	{
+		for(int j = 0; j < Size; j++)
+		{
+			if(Flow[i][j] == 0||Flow[i][j] == 99)
+			{
+				Form(Size, NumColors);
+			}
+		}
+	}
+
+}
+
 CoordList* Puzzle::GeneratePath(CoordList* Path, int GoalX, int GoalY)
 {
 	//Recursive function to determine a path between two points
@@ -213,23 +270,16 @@ CoordList* Puzzle::GeneratePath(CoordList* Path, int GoalX, int GoalY)
 	double OriginalDistance;
 	CurrX = Path->NeighborX;
 	CurrY = Path->NeighborY;
+
+	ClosedSpaces[CurrX][CurrY] = 1;
+
 	OriginalDistance = DetermineDistance(CurrX, CurrY, GoalX, GoalY);
 
 	//Once a path is found, return as a list, and mark the path in the ClosedSpaces array
 	if(CurrX == GoalX && CurrY == GoalY)
 	{
 		cout << "Path Found" << endl;
-
-		CoordList* temppath;
-		temppath = Path;
-		while(temppath != NULL)
-		{
-			
-			int someX = temppath->NeighborX;
-			int someY = temppath->NeighborY;
-			ClosedSpaces[someX][someY] = 1;
-			temppath = temppath->next;
-		}
+		Clear99s();
 		return(Path);
 	}
 	//If a path has not yet been found, determine all neighbors of the leading
@@ -251,25 +301,56 @@ CoordList* Puzzle::GeneratePath(CoordList* Path, int GoalX, int GoalY)
 			CoordList* NewNeighbor = new CoordList;
 			NewX = CurrX + DirectsX[i];
 			NewY = CurrY + DirectsY[i];
+
 			if(IsPossible(NewX, NewY))
 			{
-				NewNeighbor->NeighborX = NewX;
-				NewNeighbor->NeighborY = NewY;
+				if(ClosedSpaces[NewX][NewY] == 0)
+				{
+					NewNeighbor->NeighborX = NewX;
+					NewNeighbor->NeighborY = NewY;
 				
-				if(PointNeighbors == NULL)
-				{
-					NewNeighbor->next = NULL;
-					PointNeighbors = NewNeighbor;
-				}
-				else
-				{
-					NewNeighbor->next = PointNeighbors;
-					PointNeighbors = NewNeighbor;
+					if(PointNeighbors == NULL)
+					{
+						NewNeighbor->next = NULL;
+						PointNeighbors = NewNeighbor;
+					}
+					else
+					{
+						NewNeighbor->next = PointNeighbors;
+						PointNeighbors = NewNeighbor;
+					}
 				}
 			}
-			//delete NewNeighbor;
 		}
 		
+		if(PointNeighbors == NULL)
+		{
+			cout << "No Path Found..." << endl;
+			DisplayNumGrid();
+			system("pause");
+			while(Path->next != NULL)
+			{
+				int SomeX = Path->NeighborX;
+				int SomeY = Path->NeighborY;
+				ClosedSpaces[SomeX][SomeY] = 0;
+				Path = Path->next;
+			}
+			Flow[GoalX][GoalY] = 0;
+			Flow[Path->NeighborX][Path->NeighborY] = 0;
+			Clear99s();
+			FindSpot();
+			int ThisX = head->xPos;
+			int ThisY = head->yPos;
+			SetGoal(head);
+			int NewGoalX = head->GoalX;
+			int NewGoalY = head->GoalY;
+			Path->NeighborX = ThisX;
+			Path->NeighborY = ThisY;
+			Flow[ThisX][ThisY] = head->ColorCode;
+			return(GeneratePath(Path, NewGoalX, NewGoalY));
+
+		}
+
 		//Test all neighbors to determine which is closest to the goal point.
 		while(PointNeighbors != NULL)
 		{
@@ -284,12 +365,9 @@ CoordList* Puzzle::GeneratePath(CoordList* Path, int GoalX, int GoalY)
 				AChoice->NeighborX = NewX;
 				AChoice->NeighborY = NewY;
 				BestChoice = AChoice;
-				PointNeighbors = PointNeighbors->next;
 			}
-			
-			if(PointNeighbors != NULL)
+			else
 			{
-				
 				NewDistance = DetermineDistance(NewX, NewY, GoalX, GoalY);
 
 				OldX = BestChoice->NeighborX;
@@ -299,13 +377,11 @@ CoordList* Puzzle::GeneratePath(CoordList* Path, int GoalX, int GoalY)
 				//If the new neighbor is closer than the old neighbor, replace it
 				if(NewDistance < OldDistance && NewDistance < OriginalDistance)
 				{
-					
 					BestChoice->NeighborX = NewX;
 					BestChoice->NeighborY = NewY;
-				}
-				PointNeighbors = PointNeighbors->next;
+				}	
 			}
-			
+			PointNeighbors = PointNeighbors->next;
 		}
 		//put the neighbor closest to the goal into the path and run the function again.
 		BestChoice->next = Path;
@@ -313,6 +389,7 @@ CoordList* Puzzle::GeneratePath(CoordList* Path, int GoalX, int GoalY)
 		return(GeneratePath(Path, GoalX, GoalY));
 	}
 }
+
 
 double Puzzle::DetermineDistance(int OneX, int OneY, int TwoX, int TwoY)
 {

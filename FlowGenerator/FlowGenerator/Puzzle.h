@@ -44,6 +44,9 @@ private:
 	void Draw(void);
 	void FillCells(void);
 	void LoadColors(void);
+	void FillPath(ColorPoint*&);
+	void Clear99s(void);
+	void CheckEmpty(void);
 	double DetermineDistance(int, int, int, int);
 		
 public:

@@ -1,0 +1,84 @@
+Expression Tree Program - Build, Evaluate, and Reduce Trees
+ Please enter name of input file:  prog3b2.txt
+
+Input prefix expression is: +  2  1
+Infix form (parenthesized) is: ( 2  +  1  )
+Postfix form is: 2  1  +
+Evaluation is: 3
+Reduced infix expression is: 3
+
+Input prefix expression is: *  0  a
+Infix form (parenthesized) is: ( 0  *  a  )
+Postfix form is: 0  a  *
+Reduced infix expression is: 0
+
+Input prefix expression is: *  a  0
+Infix form (parenthesized) is: ( a  *  0  )
+Postfix form is: a  0  *
+Reduced infix expression is: 0
+
+Input prefix expression is: *  a  1
+Infix form (parenthesized) is: ( a  *  1  )
+Postfix form is: a  1  *
+Reduced infix expression is: a
+
+Input prefix expression is: *  1  a
+Infix form (parenthesized) is: ( 1  *  a  )
+Postfix form is: 1  a  *
+Reduced infix expression is: a
+
+Input prefix expression is: +  0  a
+Infix form (parenthesized) is: ( 0  +  a  )
+Postfix form is: 0  a  +
+Reduced infix expression is: a
+
+Input prefix expression is: +  a  0
+Infix form (parenthesized) is: ( a  +  0  )
+Postfix form is: a  0  +
+Reduced infix expression is: a
+
+Input prefix expression is: -  a  0
+Infix form (parenthesized) is: ( a  -  0  )
+Postfix form is: a  0  -
+Reduced infix expression is: a
+
+Input prefix expression is: /  a  1
+Infix form (parenthesized) is: ( a  /  1  )
+Postfix form is: a  1  /
+Reduced infix expression is: a
+
+Input prefix expression is: +  /  +  0  a  -  7  6  +  b  *  c  0
+Infix form (parenthesized) is: ( ( ( 0  +  a  ) /  ( 7  -  6  ) ) +  ( b  +  ( c  *  0  ) ) )
+Postfix form is: 0  a  +  7  6  -  /  b  c  0  *  +  +
+Reduced infix expression is: ( a  +  b  )
+
+Input prefix expression is: +  /  1  a  *  0  a
+Infix form (parenthesized) is: ( ( 1  /  a  ) +  ( 0  *  a  ) )
+Postfix form is: 1  a  /  0  a  *  +
+Reduced infix expression is: ( 1  /  a  )
+
+Input prefix expression is: +  /  9  3  *  2  1
+Infix form (parenthesized) is: ( ( 9  /  3  ) +  ( 2  *  1  ) )
+Postfix form is: 9  3  /  2  1  *  +
+Evaluation is: 5
+Reduced infix expression is: 5
+
+Input prefix expression is: /  +  5  /  *  4  2  2  +  2  1
+Infix form (parenthesized) is: ( ( 5  +  ( ( 4  *  2  ) /  2  ) ) /  ( 2  +  1  ) )
+Postfix form is: 5  4  2  *  2  /  +  2  1  +  /
+Evaluation is: 3
+Reduced infix expression is: 3
+
+Input prefix expression is: *  1  +  a  -  b  c
+Infix form (parenthesized) is: ( 1  *  ( a  +  ( b  -  c  ) ) )
+Postfix form is: 1  a  b  c  -  +  *
+Reduced infix expression is: ( a  +  ( b  -  c  ) )
+
+Input prefix expression is: *  +  0  -  a  b  1
+Infix form (parenthesized) is: ( ( 0  +  ( a  -  b  ) ) *  1  )
+Postfix form is: 0  a  b  -  +  1  *
+Reduced infix expression is: ( a  -  b  )
+
+Thank you for using the Expression Tree Program
+Terminating Program...
+Press any key to continue . . .

@@ -1,0 +1,63 @@
+7
+14 5
+Joe
+Mark
+Sally
+Rick
+Betty
+Tony
+Sherry
+Tina
+Katie
+Tricia
+Michael
+Nelson
+Terry
+Jeff
+14 9
+Joe
+Mark
+Sally
+Rick
+Betty
+Tony
+Sherry
+Tina
+Katie
+Tricia
+Michael
+Nelson
+Terry
+Jeff
+0 3
+3 0
+Bob
+Bobby
+Robert
+3 1
+Bob
+Bobby
+Robert
+3 4
+Bob
+Bobby
+Robert
+18 13
+Daffy
+Donald
+Micky
+Minnie
+Goofy
+Cinderella
+Cruella
+Aurora
+Charming
+Snow
+Tigger
+Pooh
+Pan
+Pinnochio
+Huey
+Louie
+Tweety
+Sylvester

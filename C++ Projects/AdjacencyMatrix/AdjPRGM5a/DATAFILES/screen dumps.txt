@@ -1,0 +1,20 @@
+courses.txt:
+	Enter name of data file> courses.txt
+	Enter name of output file > output1.txt
+	Press any key to continue . . .
+
+
+inputA.txt:
+	Enter name of data file> inputA.txt
+	Enter name of output file > output2.txt
+	Press any key to continue . . .
+
+inputB.txt:
+	Enter name of data file> inputB.txt
+	Enter name of output file > output3.txt
+	ERROR: VERTICES [0] AND [0] ARE NOT DISTINCT
+	ERROR: VERTICES [2] AND / OR [5] ARE NOT LOCATED WITHIN DIGRAPH
+	ERROR: VERTICES [4] AND [4] ARE NOT DISTINCT
+	ERROR: VERTICES [5] AND / OR [0] ARE NOT LOCATED WITHIN DIGRAPH
+	ERROR: VERTICES [5] AND / OR [0] ARE NOT LOCATED WITHIN DIGRAPH
+	Press any key to continue . . .

@@ -1,0 +1,73 @@
+Now create a simple tree B.
+
+Now cursor is at root node
+
+The tree B after CreateSampletree (inorder):
+Leaf:     -3
+Interior:   2
+Leaf:     -9
+Interior:   9
+Leaf:     -5
+
+Hit enter to continue
+
+The tree B2 after swapping it with B - should be same as above:
+Leaf:     -3
+Interior:   2
+Leaf:     -9
+Interior:   9
+Leaf:     -5
+
+Hit enter to continue
+
+The Tree B after change:
+Leaf:     -3
+Interior:   2
+Leaf:     5
+Interior:   9
+Leaf:     -5
+
+Hit enter to continue
+
+The tree B after removing the leftmost node
+Interior:   2
+Leaf:     5
+Interior:   9
+Leaf:     -5
+
+Hit enter to continue
+
+The tree B3 after copying it from one just above:
+Interior:   2
+Leaf:     5
+Interior:   9
+Leaf:     -5
+
+Hit enter to continue
+
+The tree B2 before swapping it with B's left subtree - It should be empty:
+
+Hit enter to continue
+
+The tree B before SwapSubTrees:
+Interior:   2
+Leaf:     5
+Interior:   9
+Leaf:     -5
+
+Hit enter to continue
+
+The tree B2 after swapping it with B's left subtree:
+Interior:   2
+Leaf:     5
+
+Hit enter to continue
+
+The tree B after SwapSubTrees:
+Interior:   9
+Leaf:     -5
+
+Hit enter to continue
+
+Dispose binary trees
+Press any key to continue . . .

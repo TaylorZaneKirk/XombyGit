@@ -1,0 +1,18 @@
+ Please enter name of input file:  prog3a3.txt
+
+  The inorder traversal of the tree
+Tree contains:
+7  6  87  7  9  3  4  45  37  95
+
+  The Preorder traversal of the tree
+Tree contains:
+9  7  6  7  87  95  4  3  37  45
+
+  The postorder traversal of the tree
+Tree contains:
+87  7  6  7  3  45  37  4  95  9
+
+ The Sum of the tree
+Total: 300
+
+Press any key to continue . . .

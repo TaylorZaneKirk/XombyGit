@@ -1,0 +1,47 @@
+Coin Sorter 9000:Greeting
+This program will provide you with an easy and quick way to sort the coins you
+ have into convenient rolls and tell you exactly how much money you have, and
+ how many of each coin you have.
+
+File: 'CoinSort.txt' has been generated.
+
+Please specify if you would like to
+load the default file containing
+the various coin denominations to sort)
+Please input 'D' to load 'CoinSort.txt' by default
+Please input 'L' to choose a file to load
+D
+After marker #1
+0 rolls of pennies + 4 pennies = $0.04
+0 rolls of nickels + 4 nickels = $0.20
+0 rolls of dimes + 7 nickels = $0.70
+0 rolls of quarters + 3 quarters = $0.75
+Total = $1.69
+
+After marker #2
+0 rolls of pennies + 8 pennies = $0.08
+0 rolls of nickels + 7 nickels = $0.35
+0 rolls of dimes + 12 nickels = $1.20
+0 rolls of quarters + 10 quarters = $2.50
+Total = $4.13
+
+After marker #3
+1 rolls of pennies + 47 pennies = $0.97
+2 rolls of nickels + 2 nickels = $4.10
+2 rolls of dimes + 7 nickels = $10.70
+2 rolls of quarters + 18 quarters = $24.50
+Total = $40.27
+
+After marker #4
+2 rolls of pennies + 47 pennies = $1.47
+3 rolls of nickels + 30 nickels = $7.50
+3 rolls of dimes + 1 nickels = $15.10
+4 rolls of quarters + 1 quarters = $40.25
+Total = $64.32
+
+After marker #5
+3 rolls of pennies + 41 pennies = $1.91
+4 rolls of nickels + 30 nickels = $9.50
+4 rolls of dimes + 4 nickels = $20.40
+5 rolls of quarters + 11 quarters = $52.75
+Total = $84.56

@@ -1,0 +1,32 @@
+List has 14 names:
+Joe, Mark, Sally, Rick, Betty, Tony, Sherry, Tina, Katie, Tricia, Michael, Nelson, Terry, Jeff
+
+J-P permutation removing every 5th:
+Betty, Tricia, Joe, Sherry, Terry, Tony, Jeff, Katie, Rick, Sally, Tina, Nelson, Mark, Michael
+
+Michael WINS!
+
+List has 14 names:
+Joe, Mark, Sally, Rick, Betty, Tony, Sherry, Tina, Katie, Tricia, Michael, Nelson, Terry, Jeff
+
+J-P permutation removing every 9th:
+Katie, Rick, Jeff, Michael, Tina, Sherry, Tricia, Terry, Sally, Joe, Mark, Nelson, Betty, Tony
+
+Tony WINS!
+
+List has 6 names:
+Bob, Bobby, Robert, Bob, Bobby, Robert
+
+J-P permutation removing every 1th:
+Bob, Bobby, Robert, Bob, Bobby, Robert
+
+Robert WINS!
+
+List has 21 names:
+Bob, Bobby, Robert, Daffy, Donald, Micky, Minnie, Goofy, Cinderella, Cruella, Aurora, Charming, Snow, Tigger, Pooh, Pan, Pinnochio, Huey, Louie, Tweety, Sylvester
+
+J-P permutation removing every 13th:
+Snow, Donald, Louie, Charming, Minnie, Bobby, Tweety, Pinnochio, Pan, Huey, Bob, Micky, Aurora, Daffy, Sylvester, Robert, Cruella, Tigger, Pooh, Goofy, Cinderella
+
+Cinderella WINS!
+

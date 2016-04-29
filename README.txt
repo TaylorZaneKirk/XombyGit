@@ -1,1 +1,1 @@
-This repo is strictly so that I (Taylor Kirk) can conviently store any coding projects that I work on. The current files within this repo date from my Computer Science I course in 2012, up to my current course in Advanced Topics in Network Security.
+This repo is strictly so that I (Taylor Kirk) can conviently store any coding projects that I work on. The current files within this repo date from my Computer Science I course in 2012, up to my graduation in Decembver of 2016.

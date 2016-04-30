@@ -1,0 +1,52 @@
+This program prints a graph and its compliment.
+There are 21 vertices in the Graph.
+The edges are as follows:
+	 From vertex 0 to: 
+	 From vertex 1 to: 0 
+	 From vertex 2 to: 1 
+	 From vertex 3 to: 1 
+	 From vertex 4 to: 2 8 
+	 From vertex 5 to: 0 
+	 From vertex 6 to: 5 
+	 From vertex 7 to: 6 
+	 From vertex 8 to: 0 
+	 From vertex 9 to: 3 
+	 From vertex 10 to: 4 8 
+	 From vertex 11 to: 4 
+	 From vertex 12 to: 1 7 
+	 From vertex 13 to: 
+	 From vertex 14 to: 3 4 
+	 From vertex 15 to: 4 
+	 From vertex 16 to: 3 4 
+	 From vertex 17 to: 4 6 
+	 From vertex 18 to: 4 13 
+	 From vertex 19 to: 4 
+	 From vertex 20 to: 17 
+
+
+This program prints a graph and its compliment.
+There are 21 vertices in the Graph.
+The edges are as follows:
+	 From vertex 0 to: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 
+	 From vertex 1 to: 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 
+	 From vertex 2 to: 0 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 
+	 From vertex 3 to: 0 2 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 
+	 From vertex 4 to: 0 1 3 5 6 7 9 10 11 12 13 14 15 16 17 18 19 20 
+	 From vertex 5 to: 1 2 3 4 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 
+	 From vertex 6 to: 0 1 2 3 4 7 8 9 10 11 12 13 14 15 16 17 18 19 20 
+	 From vertex 7 to: 0 1 2 3 4 5 8 9 10 11 12 13 14 15 16 17 18 19 20 
+	 From vertex 8 to: 1 2 3 4 5 6 7 9 10 11 12 13 14 15 16 17 18 19 20 
+	 From vertex 9 to: 0 1 2 4 5 6 7 8 10 11 12 13 14 15 16 17 18 19 20 
+	 From vertex 10 to: 0 1 2 3 5 6 7 9 11 12 13 14 15 16 17 18 19 20 
+	 From vertex 11 to: 0 1 2 3 5 6 7 8 9 10 12 13 14 15 16 17 18 19 20 
+	 From vertex 12 to: 0 2 3 4 5 6 8 9 10 11 13 14 15 16 17 18 19 20 
+	 From vertex 13 to: 0 1 2 3 4 5 6 7 8 9 10 11 12 14 15 16 17 18 19 20 
+	 From vertex 14 to: 0 1 2 5 6 7 8 9 10 11 12 13 15 16 17 18 19 20 
+	 From vertex 15 to: 0 1 2 3 5 6 7 8 9 10 11 12 13 14 16 17 18 19 20 
+	 From vertex 16 to: 0 1 2 5 6 7 8 9 10 11 12 13 14 15 17 18 19 20 
+	 From vertex 17 to: 0 1 2 3 5 7 8 9 10 11 12 13 14 15 16 18 19 20 
+	 From vertex 18 to: 0 1 2 3 5 6 7 8 9 10 11 12 14 15 16 17 19 20 
+	 From vertex 19 to: 0 1 2 3 5 6 7 8 9 10 11 12 13 14 15 16 17 18 20 
+	 From vertex 20 to: 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 18 19 
+
+

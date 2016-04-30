@@ -74,7 +74,7 @@ void PrintDiGraph ( DiGraph & G, ofstream & OutFile)
 // ErrorCondition : none
 {
 	int size = G.GetNumberOfVertices();
-
+	OutFile << "This program prints a graph and its compliment." << endl;
 	OutFile << "There are " << size << " vertices in the Graph." << endl;
 	OutFile << "The edges are as follows:" << endl;
 	for (int i = 0; i < size; i++)

@@ -68,6 +68,7 @@ void OpenFiles (ifstream & infile, ofstream & outfile)
 	char infilename[25];
 	char outfilename[25];
 
+	cout << "Welcome to the DiGraph construction program." << endl;
 	cout << "Enter name of data file> ";
 	cin >> infilename;
 	infile.open (infilename);

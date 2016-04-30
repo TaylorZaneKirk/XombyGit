@@ -1,7 +1,7 @@
 
 /*---------------------------------------------------------------------------
 UNIT NAME : DiGraph.cpp
-PURPOSE   : Directed Graph / Adjacency Matrix Implementation
+PURPOSE   : Directed Graph / Adjacency List Implementation
 WRITTEN FOR : Data Structures
 WRITTEN BY : Taylor Kirk
 DATE : 4/24/2016
@@ -16,19 +16,20 @@ DiGraph::DiGraph (int n)
 // PostCondition : Graph Graph is created and has n vertices and no edges
 // Error Condition : Error if n < 0 or n >+ MaxVertices
 {
-	if (n <= MAXVERTICES && n >= 0)
+	if ((n <= MAXVERTICES) && (n >= 0))
 	{
 		size = n;
-		adjMatrix = new int *[size];
-
+		
 		for (int i = 0; i < size; i++)
 		{
-			adjMatrix[i] = new int[size];
+			int * matrix = new int[size];
 
 			for (int j = 0; j < size; j++)
 			{
-				adjMatrix[i][j] = 0;
+				matrix[j] = 0;
 			}
+
+			adjList.push_back(matrix);
 		}
 	}
 	else
@@ -44,16 +45,18 @@ DiGraph::DiGraph(DiGraph & other)
 // Checks : none
 {
 	size = other.size;
-	adjMatrix = new int * [size];
+	
 
 	for (int i = 0; i < size; i++)
 	{
-		adjMatrix[size] = new int[size];
+		int * matrix = new int[size];
 
 		for (int j = 0; j < size; j++)
 		{
-			adjMatrix[i][j] = other.adjMatrix[i][j];
+			matrix[j] = other.adjList[i][j];
 		}
+
+		adjList.push_back(matrix);
 	}
 }
 
@@ -65,10 +68,10 @@ DiGraph::~DiGraph ()
 {
 	for (int i = 0; i < size; i++)
 	{
-		delete adjMatrix[i];
+		delete adjList[i];
 	}
 
-	delete[] adjMatrix;
+	adjList.clear();
 } //~DiGraph
 
 
@@ -77,16 +80,16 @@ void DiGraph::SwapDiGraphs ( DiGraph & other)
 // PostCondition : this = #other and other = #this
 // ErrorCondition : none
 {
-	int ** temp;
+	vector<int*> temp;
 	int tempsize;
 
-	temp = other.adjMatrix;
+	temp = other.adjList;
 	tempsize = other.GetNumberOfVertices();
 
-	other.adjMatrix = adjMatrix;
+	other.adjList = adjList;
 	other.size = size;
 
-	adjMatrix = temp;
+	adjList = temp;
 	size = tempsize;
 	
 } // swap DiGraphs
@@ -100,9 +103,9 @@ void DiGraph::AddEdge (int X, int Y)
 //                  a vertex in Graph or if X and Y are not distinct or if
 //                  edge (X,Y) is already in Graph
 {
-	if ( (X < size) && (Y < size) && (X != Y) && !IsEdge(X,Y) )
+	if ( (X < size) && (Y < size) && (X >= 0) && (Y >= 0) && (X != Y) && !IsEdge(X,Y) )
 	{
-		adjMatrix[X][Y] = 1;
+		adjList[X][Y] = 1;
 	}
 	else
 	{
@@ -120,9 +123,9 @@ void DiGraph::RemoveEdge(int X, int Y)
 //                  a vertex in Graph or if X and Y are not distinct or if
 //                  edge (X,Y) is already in Graph
 {
-	if ((X < size) && (Y < size) && (X != Y) && IsEdge(X, Y))
+	if ((X < size) && (Y < size) && (X != Y) && (X >= 0) && (Y >= 0) && IsEdge(X, Y))
 	{
-		adjMatrix[X][Y] = 0;
+		adjList[X][Y] = 0;
 	}
 	else
 	{
@@ -138,9 +141,9 @@ bool DiGraph::IsEdge (int X, int Y ) const
 // PostCondition : Graph is unchanged, IsEdge is true if (f edge (X,Y) is in Graph
 // ErrorCondition : X or Y is not a vertex in Graph
 {
-	if ( (X < size) && (Y < size) )
+	if ((X < size) && (Y < size) && (X >= 0) && (Y >= 0))
 	{
-		return adjMatrix[X][Y];
+		return adjList[X][Y];
 	}
 	else
 	{

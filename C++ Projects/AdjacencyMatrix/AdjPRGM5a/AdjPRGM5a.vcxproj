@@ -69,7 +69,7 @@
   <ItemGroup>
     <ClCompile Include="DIGRAPH.cpp" />
     <ClCompile Include="ENHDIG.CPP" />
-    <ClCompile Include="PROG5B.CPP" />
+    <ClCompile Include="PROG5A.CPP" />
     <ClCompile Include="SortedList.cpp" />
     <ClCompile Include="STACK.CPP" />
   </ItemGroup>

@@ -9,6 +9,7 @@ DATE : 4/24/2016
 
 #pragma once
 #include <iostream>
+#include <vector>
 using namespace std;
 
 static const int MAXVERTICES = 25;
@@ -68,7 +69,7 @@ class DiGraph
 	// Checks : none
 
   private:
-	 int ** adjMatrix;
+	 vector<int*> adjList;
 	 int size;
 };
 

@@ -24,13 +24,13 @@
     <ClCompile Include="ENHDIG.CPP">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="PROG5B.CPP">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="SortedList.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="STACK.CPP">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PROG5A.CPP">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

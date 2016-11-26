@@ -1,5 +1,5 @@
 //Catherine Stringfellow and
-// 
+// Taylor Kirk
 //
 
 #include <cstdio>
